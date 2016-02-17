@@ -1,4 +1,4 @@
-![Sitemap Picture](/week-2/img/site-map.png)
+![Sitemap Picture](/week-2/imgs/site-map.png)
 
 What are the 6 Phases of Web Design?
 Information Gathering
