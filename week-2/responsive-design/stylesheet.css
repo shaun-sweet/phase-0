@@ -1,50 +1,109 @@
 /* You'll want to make the site responsive and nice looking here. Have fun!*/
 
-#wrapper {
-  text-align: left;
-  margin: 0px auto;
-  padding: 0px;
-  border:0;
-  width: 960px;
-  background: url("http://cdn.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-6-full.jpg") repeat;
-  color:black;
-  font-size: 2em;
+@media screen and (max-width: 375px) {
+
+    #wrapper {
+    position: relative;
+    text-align: left;
+    margin: 0px auto;
+    padding: 0px;
+    border:0;
+    width: 96%;
+    background: url("http://cdn.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-6-full.jpg") repeat;
+    color:black;
+    font-size: 2em;
+  }
+
+  #side-a ul {
+    list-style-type:none;
+  }
+  img {
+    position: relative;
+    width: 100%;
+    
+
+  }
+  a {
+    color:black;
+  }
+
+  #header {
+    position: relative;
+    margin: 0 0 1.5625% 0;
+    background: black;
+    color: white;
+    text-align: center;
+  }
+
+  #side-a {
+    display: inline-block;
+    width: 100%;
+    margin-top: -25px;
+  }
+
+  #side-a li{
+    display: inline-block;
+    font-size: 16px;
+    padding-top: 01.3333333333333%;
+  }
+
+  #content {
+    position: relative;
+    font-size: 18px;
+    width: 96%;
+    text-align: center;
+  }
+
+  #footer {
+    clear: both;
+    background: #A2A2A2;
+    text-align: center;
+  }
 }
 
-#side-a ul{
-  list-style-type:none;
-}
+/* if its over 376 px this is the css */
+@media screen and (min-width: 376px) {
+  #wrapper {
+    text-align: left;
+    margin: 0px auto;
+    padding: 0px;
+    border:0;
+    width: 96%;
+    background: url("http://cdn.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-6-full.jpg") repeat;
+    color:black;
+    font-size: 2em;
+  }
 
-a {
-  color:black;
-}
+  #side-a ul {
+    list-style-type:none;
+  }
 
-#header {
-  margin: 0 0 15px 0;
-  background: black;
-  color: white;
-}
+  a {
+    color:black;
+  }
 
-#side-a {
-  float: left;
-  width: 150px;
-}
+  #header {
+    margin: 0 0 1.5625% 0;
+    background: green;
+    color: white;
+  }
 
-#side-a li{
-  padding-top: 20px;
-}
+  #side-a {
+    float: left;
+    width: 15.625%;
+  }
 
-#side-b {
-  float: right;
-  width: 150px;
-}
+  #side-a li{
+    padding-top: 01.3333333333333%;
+  }
 
-#content {
-  float: left;
-  width: 68%;
-}
+  #content {
+    float: left;
+    width: 68%;
+  }
 
-#footer {
-  clear: both;
-  background: #A2A2A2;
+  #footer {
+    clear: both;
+    background: #A2A2A2;
+  }
 }
