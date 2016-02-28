@@ -1,0 +1,111 @@
+html {
+  background-color: #ffffff;
+}
+
+li, address, h3, h5, .disclaimer, .ad {
+  color: #000080;
+}
+
+a {
+  color:#800080;
+}
+
+a:visited {
+  color:#ff0000;
+}
+
+ul {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    list-style-position: inside;
+    border-bottom: solid grey 1px;
+    padding-bottom: 10px;
+}
+
+sub {
+  font-size: 8pt;
+  display: block;
+}
+
+h3 {
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 5pt;
+  }
+
+ h3::first-letter {
+   font-size: 200%; 
+ }
+ 
+ header {
+   text-align: center;
+   border-bottom: solid grey 1px;
+ }
+ 
+ address {
+   font-style: normal;
+   margins: -20pt;
+ }
+ 
+ h5 {
+   margin-top: 0pt;
+   font-size: 12pt;
+ }
+ 
+ .ad {
+ 	display: inline-block;
+   text-align: center;
+   font-size: 6pt;
+   width: 300px;
+  
+  
+   margin-bottom: 10pt;
+ }
+ 
+ img {
+   display: block;
+   image-align: center;
+   margin: 0 auto;
+ }
+ 
+ .disclaimer {
+   font-size: 8pt;
+   border-top: solid grey 1px;
+   border-bottom: solid grey 1px;
+   padding-top: 10pt;
+   padding-bottom: 10pt;
+ }
+.center-ad {
+	text-align: center;
+}
+footer {
+   margin-top: 10pt;
+}
+
+p, text {
+   font-size: 8pt;
+ }
+ 
+ text {
+   font-weight: bold;
+ }
+ /*
+ What is important to know when linking an external file (like a stylesheet) to an HTML file?
+Well, the most important part is knowing the actual tag to use!  It looks liked this when I made it:  <link rel="stylesheet" type="text/css" href="stylesheets/my-berkshire-stylesheet.css">
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?  It was fairly quick!  We did a good job.  We used display block a lot in order to get elements to take up an entire "row" we also used inline blocks in addition :)
+
+
+What CSS did you use to modify the element style (like size, color, etc.)
+we used color, font-weight, font-size, border solid grey 1px.  We used text-align.
+
+
+Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+We did.  We had added some classes to a div simply to be able to target that particular div.  We added some classes to existing elements in order to clarify which were which and target them individually.
+
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+Ours was definitely cleaner.  Their's was full of HTML that was very un-easy on the eyes to look at.  I much prefered the work that we had done.  
+ */
