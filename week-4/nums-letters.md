@@ -19,3 +19,11 @@ days_per_decade = 3650
 minutes_per_day = 24 * 60
 minutes_in_decade = minutes_per_day * days_per_decade
 ```
+
+#4.2.1
+[Defining Variables](defining-variables.rb)
+
+#4.2.2
+[Nums and letters](nums-letters.rb)
+#4.2.3
+[Math fun](basic-math.rb)
