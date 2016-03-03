@@ -15,16 +15,15 @@
 #to sort the array, we can iterate through the array, one at a time.  so we will need something to keep track of which iteration (loop counter) we are on.  we will need a way to need a way to determine when to STOP looping, the interation needs to stop once there is no more array.  
 def smallest_integer(list_of_nums)
   smallest_num = list_of_nums[0]
+  counter = 0 
+  while counter < list_of_nums.length
+    if smallest_num > list_of_nums[counter]
+      smallest_num = list_of_nums[counter]
 
-  loop_counter = 0
-
-  while list_of_nums[loop_counter] < list_of_nums.length
-  	current_num = list_of_nums[loop_counter]
-  	if current_num < smallest_num
-  		current_num = smallest_num
-  	end
-  	loop_counter = loop_counter + 1
+    end
+    puts counter
+    counter += 1
   end
-  smallest_num
+  smallest_num 
 end
-puts smallest_integer([1, 2, 4,3,100,32,45,12])
+smallest_integer([-100,3, -6,-43,-32,-5])
