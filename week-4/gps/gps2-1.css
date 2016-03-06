@@ -1,0 +1,31 @@
+header {
+letter-spacing: .03em;
+width: 100%;
+height: 7em;
+background-color: #726D85;
+}
+
+footer {
+	text-align: center;
+	background-color: #726D85;
+}
+
+.column-1 {
+	line-height: 110%;
+	letter-spacing: .03em;
+	vertical-align: top;
+	display:inline-block;
+	width: 45%;
+	background-color: #FFC7EF;
+}
+
+.column-2 {
+	line-height: 110%;
+	letter-spacing: .03em;
+	margin-left: 3%;
+	vertical-align: top;
+	display: inline-block;
+	width: 45%;
+	background-color: #FFC7EF;
+	} 
+
