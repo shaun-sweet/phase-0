@@ -82,9 +82,9 @@ def separate_comma(i)
 	end
 	p output.join
 end
-separate_comma(180)
+separate_comma(18442342334656430)
 
-
+ 
 
 # 3. Reflection
 
