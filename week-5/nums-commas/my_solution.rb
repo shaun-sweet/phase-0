@@ -27,46 +27,36 @@
 # 
 # 1. Initial Solution
 def separate_comma(i)
-
+	
 	input_length = i.to_s.length
-	output = ""
+	output = []
 
 	if input_length <= 3
 		p i.to_s
 
-	elsif input_length < 7
-	count = 0
-		while input_length > count # loop length of string passed in 
-			if count == 1
-				output += "," + i.to_s[count]
-				count += 1
-			else
-			output += i.to_s[count]
-			count += 1
+	elsif input_length > 3
+		# Take the input and split the integers into an array
+		input = i.to_s.split('')
+		# Iterate thru the array backwards
+		counter = 1
+		iteration = -1
+		while counter < input_length + 1
+		# Every third iteration, insert a comma
+			output.unshift(input[iteration])
+			if counter % 3 == 0 
+				output.unshift(",")
 			end
-		end
-		p output
-	else
-		output = []
-		input = i.to_s.reverse.split("")
-		negative_iteration = -1
-		pass_num = 0
-		until pass_num == input.length
-			if negative_iteration % 3 == 0
-				output << ","
-				output << input[negative_iteration]
-				negative_iteration -= 1
-				pass_num	+= 1
-			else
-			output << input[negative_iteration]
-			negative_iteration -= 1
-			pass_num += 1
-			end
+			iteration -= 1
+			counter += 1
+		end	
+		# Return the array as a string
+		if input_length % 3 == 0
+			output.shift
 		end
 		p output.join
 	end
 end
-separate_comma(592800)
+separate_comma(1121180)
 
 
 # 2. Refactored Solution
