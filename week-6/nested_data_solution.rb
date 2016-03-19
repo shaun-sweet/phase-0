@@ -38,6 +38,7 @@ hash = {outer: {inner: {"almost" => {3 => "congrats!"}}}}
 
 # RELEASE 3: ITERATE OVER NESTED STRUCTURES
 
+
 number_array = [5, [10, 15], [20,25,30], 35]
 number_array.each do |x|
 	if x.is_a?(Array)
@@ -49,7 +50,9 @@ number_array.each do |x|
  	end			
 end
 
-
+number_array.flatten.each do |x|
+	p x
+end
 # Bonus:
 
 startup_names = ["bit", ["find", "fast", ["optimize", "scope"]]]
