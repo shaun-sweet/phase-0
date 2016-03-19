@@ -27,7 +27,7 @@ hash = {outer: {inner: {"almost" => {3 => "congrats!"}}}}
 # Hole 3
 # Target element: "finished"
 
-nested_data = {array: ["array", {hash: "finished"}]}
+# nested_data = {array: ["array", {hash: "finished"}]}
 
 # attempts:
 # ============================================================
@@ -45,8 +45,8 @@ number_array.each do |x|
 			p s
 		end
 	else
-	p x
-	end
+		p x
+ 	end			
 end
 
 
