@@ -14,20 +14,45 @@
 // console.log(array);
 
 // take sentence, split into array, iterate through and choose smallest word
-var sentence = "This is a fucking setence";
-var result = [];
-for (i = 0; i < sentence.length; i++) {
-	result.push(sentence[i]);
-
-}
-console.log(result);
-
+// var sentence = "take array of word return the third greatest number in the array   ";
+// var words = sentence.trim().split(" ");
+// var smallest_word = words[0];
+// for (var i = 	words.length - 1; i >= 0; i--) {
+// 	if (smallest_word.length > words[i].length) {
+// 		smallest_word = words[i];
+// 	};
+		
+// };
+// console.log(smallest_word)
 // take array of words, return the third greatest number in the array 
 // (two versions: one with sort, one without)
 
 
 // method that returns the most common letter in a string
+// Gather up individual letters and assign each one to a key in a hash
+// each time the letter is found after the key exists, increase the value count.  default value is 0
+var string = "this is a fucking string";
+var hash = {};
 
+for (i = 0; string.length > i; i++) {
+	if (hash[string[i]] == undefined) {
+		hash[string[i]] = 1 ;
+	}
+	else {
+		hash[string[i]] ++ ;
+	}
+
+}
+var most_occuring =  hash["t"]
+for (var index in hash) {
+	if (hash[index] > most_occuring) {
+		most_occuring = hash[index];
+		var name = index;
+	}
+}
+
+console.log("The letter that appears the most is " + name);
+console.log("It appears " + most_occuring + " times.");
 
 // method that takes a book title and capitalizes appropriately
 
