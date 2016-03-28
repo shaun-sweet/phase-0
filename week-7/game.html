@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript Game</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script src="game.js"></script>
+</head>
+<body> 
+	<div class="main">
+		<div id="goodie"><img id="poppy" src="poppy.png">
+			<div id="goodie-stats"><table>
+				Goodie McGooderson
+				<tr>
+					<td id="g-dmg">Damage: </td>
+					<td id="g-health">Health: 20</td>
+				</tr>
+			</table></div>
+		</div>
+		<div id="baddie"><img src="leblanc.jpg" alt="leblanc">
+			<div id="baddie-stats">
+				<table>
+				Baddie McBad-face
+				<tr>
+					<td id="b-health">Health: </td>
+				</tr>
+			</table>
+			</div>
+		</div>
+		<button onclick="g.attack()" class="attack">Attack the mofo!</button>
+		<button onclick="g.collectResource()" class="collect-resource">Collect!!</button>
+		<div id="result"></div>
+	</div>
+</body>
+</html>

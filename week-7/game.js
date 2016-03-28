@@ -15,18 +15,54 @@
 // Goodington McGooder
 // Baddie McBaddieface
 // Objects:
+// Game
+// Goodington McGooder
+// Baddie McBaddieface
+// 
 // Functions:
-
+// 
+// 
 // Pseudocode
-//
+// Game as a class.  The two characters are json objects within the class.  
 //
 //
 //
 //
 
 // Initial Code
+'use strict';
+class Character{
+	constructor(name, health){
+		this.name = name;
+		this.resource = 0;
+		this.health = health;
+	}
 
+	attack(){
+		if (this.name == "goodie") {
+			b.health = b.health - 1;
+			b.health = b.health - this.resource;
+			this.resource = 0;
+			console.log("health is " + b.health);
+			console.log("your health is " + g.health);
+			document.getElementById("b-health").innerHTML = "Health:" + b.health;
+			document.getElementById("result").innerHTML = this.resource;
+		}
+		
+	}
 
+	collectResource(){
+		// increase the resource count for goodie by 1 
+		this.resource++;
+		console.log("resources are now: " + this.resource);
+		document.getElementById("result").innerHTML = this.resource;
+	}
+}
+
+var b = new Character("baddie", 20);
+var g = new Character("goodie", 20);
+console.log(g);
+console.log(b);
 
 
 

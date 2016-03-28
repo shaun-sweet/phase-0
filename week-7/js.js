@@ -31,31 +31,31 @@
 // method that returns the most common letter in a string
 // Gather up individual letters and assign each one to a key in a hash
 // each time the letter is found after the key exists, increase the value count.  default value is 0
-var string = "this is a fucking string";
-var hash = {};
+// var string = "this is a fucking string";
+// var hash = {};
 
-for (i = 0; string.length > i; i++) {
-	if (hash[string[i]] == undefined) {
-		hash[string[i]] = 1 ;
-	}
-	else {
-		hash[string[i]] ++ ;
-	}
+// for (i = 0; string.length > i; i++) {
+// 	if (hash[string[i]] == undefined) {
+// 		hash[string[i]] = 1 ;
+// 	}
+// 	else {
+// 		hash[string[i]] ++ ;
+// 	}
 
-}
-var most_occuring =  hash["t"]
-for (var index in hash) {
-	if (hash[index] > most_occuring) {
-		most_occuring = hash[index];
-		var name = index;
-	}
-}
+// }
+// var most_occuring =  hash["t"]
+// for (var index in hash) {
+// 	if (hash[index] > most_occuring) {
+// 		most_occuring = hash[index];
+// 		var name = index;
+// 	}
+// }
 
-console.log("The letter that appears the most is " + name);
-console.log("It appears " + most_occuring + " times.");
+// console.log("The letter that appears the most is " + name);
+// console.log("It appears " + most_occuring + " times.");
 
 // method that takes a book title and capitalizes appropriately
-
+console.log(document.URL);
 
 // add commas into a number to look like a standard number
 
