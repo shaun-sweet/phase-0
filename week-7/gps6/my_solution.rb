@@ -96,4 +96,24 @@ end
 # Reflection Section
 # Constants are accessible from within their class.  If they are defined outside of a class, they are considered global.  In this situation, our constant STATE_DATA is global
 # because it is being defined from outside our class VirusPredictor
+# • What are the differences between the two different hash syntaxes shown in the state_data file?
+# Well, they definitely serve almost identical purposes.  
+# {“key” => “value”}
+# Creates a hash with the key as the string “key” and the value as the string “value”.
+# {key: “value”} creates a hash, but instead of the key being a string, it is a symbol which is immutable.  It cannot be changed.  It is also a “shorthand” way of typing it out!
+
+# • What does require_relative do? How is it different from require?
+# require will load in a file and if an absolute directory isn’t specified (like C:/users/etc/etc.rb) then it will check the directories in $LOAD_PATH for the particular file you named.
+# Require_relative will just search for the file relative to where the call to require_relative was called from.  So if the two files reside in the same directory, you can call require_relative ‘file.rb’
+
+# • What are some ways to iterate through a hash?
+# I imagine the most common way is to use an each method
+# Hash.each do |k,v| puts k + v end
+# This will go through and print out the key and the value in that hash.  You need two block variables in order to have a spot for the key and the value.  
+# • When refactoring virus_effects, what stood out to you about the variables, if anything?
+# They had totally unnecessary code in the form of passing in arguments that were already able to be accessed via an instance variable.
+# • What concept did you most solidify in this challenge?
+# It was actually pretty easy!  It was fun to go through and have a ruby review for the week 
+
+
 
