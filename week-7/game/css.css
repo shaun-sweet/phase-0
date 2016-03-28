@@ -1,0 +1,61 @@
+.attack {
+	display: block;
+	border: solid 1px black;
+}
+
+.collect-resource {
+	border: solid 1px black;
+	vertical-align: top;
+}
+
+#resources {
+
+}
+
+#goodie {
+display: inline-block;
+width: 15em;
+height: 15em;
+vertical-align: top;
+}
+
+#goodie-stats{
+width: 15em;
+height: 4em;
+}
+
+#baddie-stats{
+width: 15em;
+height: 4em;
+}
+
+#g-dmg{
+
+}
+
+#g-health{
+
+}
+
+#g-health{
+
+}
+
+#g-dmg{
+
+}
+
+#baddie {
+display: inline-block;
+height: 15em;
+width: 15em;
+}
+
+#poppy{
+	height: 70%;
+}
+
+.main {
+	width: 50%;
+}
+
