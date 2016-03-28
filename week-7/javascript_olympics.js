@@ -70,3 +70,10 @@ console.log(michaelPhelps.name + " " + michaelPhelps.sport + " " + michaelPhelps
 
 
 // Reflection
+// •	What JavaScript knowledge did you solidify in this challenge?
+// Objects I think.
+// •	What are constructor functions?
+// Constructor functions are functions that take in the data you need in order to build new instances of an object.  They construct objects basically.  
+// •	How are constructors different from Ruby classes (in your research)?\
+// Ruby classes define the basic rules of an object.  For example, what attributes you want to be able to view, write to and change or just have inside as helper methods.  Constructors are functions that JUST take in the data to CREATE a new object with the data you passed in as arguments to that function.
+
