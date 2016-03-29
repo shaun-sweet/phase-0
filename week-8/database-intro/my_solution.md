@@ -14,3 +14,4 @@ SELECT column_name
 Then you'd use the FROM keyword in order to specific from which table you want to select that particular column.  so for example....
 SELECT column_name FROM table_name;
 
+[database](https://github.com/shaun-sweet/phase-0/blob/master/week-8/database-intro/database.png)
