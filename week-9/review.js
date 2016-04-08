@@ -43,31 +43,31 @@
 // Refactored:
 
 // make a list
-var list = {};
-function addItem(item, qty){
-	list[item] = qty;
-}
+// var list = {};
+// function addItem(item, qty){
+// 	list[item] = qty;
+// }
 
-function removeItem(item){
-	delete list[item];
-}
+// function removeItem(item){
+// 	delete list[item];
+// }
 
-function updateItem(item, new_item, qty){
-	if (list.hasOwnProperty(item)) {
-		delete list[item];
-		addItem(new_item, qty);
-	}else {
-		console.log("that item doesn't exist");
-	}
-}
-// output nicely
-addItem("hello", 3);
-updateItem('hello', 'it works', 34);
-var i = 1;
-for (var item in list){
-	console.log(i + "." + item + " QTY: " + list[item]);
-	i ++;
-}
+// function updateItem(item, new_item, qty){
+// 	if (list.hasOwnProperty(item)) {
+// 		delete list[item];
+// 		addItem(new_item, qty);
+// 	}else {
+// 		console.log("that item doesn't exist");
+// 	}
+// }
+// // output nicely
+// addItem("hello", 3);
+// updateItem('hello', 'it works', 34);
+// var i = 1;
+// for (var item in list){
+// 	console.log(i + "." + item + " QTY: " + list[item]);
+// 	i ++;
+// }
 
 // Reflection:
 // I thought this would be harder than it was.  I guess that voter assignment really taught me a lot about objects.  More than I thought.  I felt after a bit of getting back into javascript and objects more comfortable with objects in general.  I'd still like more practice, specifically with constructor functions so I have a better understanding.  Perhaps with phase 1 coming up soon I'll be able to do exactly that!
@@ -79,3 +79,14 @@ for (var item in list){
 
 // Did an array or object make more sense to use and why?
 // I felt that an object was more comfortable to use because you needed two items that were "one" so to say.  You needed an item and the quantity of that item as one unit and the item needed to point to the QTY.  The hash method does that successfully.  And array CAN do that, but it would be far messier I believe.
+
+
+
+// 9.2
+
+// Reverse Words
+// Input: string of words
+// output: each word letters reversed.
+
+// psuedocode:
+// Make a function that takes in a string as an argument
