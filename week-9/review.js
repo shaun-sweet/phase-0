@@ -71,3 +71,11 @@ for (var item in list){
 
 // Reflection:
 // I thought this would be harder than it was.  I guess that voter assignment really taught me a lot about objects.  More than I thought.  I felt after a bit of getting back into javascript and objects more comfortable with objects in general.  I'd still like more practice, specifically with constructor functions so I have a better understanding.  Perhaps with phase 1 coming up soon I'll be able to do exactly that!
+
+// What concepts did you solidify in working on this challenge? (reviewing the passing of information, objects, constructors, etc.)
+// I think that with programming in general I am feeling more comfortable with passing information between methods/functions via the arguments.  It felt pretty natural to me at this point which I am happy about.
+// What was the most difficult part of this challenge?
+// Starting really.  I had to look up a few things syntax wise in order to get started but ultimately that was the hardest part
+
+// Did an array or object make more sense to use and why?
+// I felt that an object was more comfortable to use because you needed two items that were "one" so to say.  You needed an item and the quantity of that item as one unit and the item needed to point to the QTY.  The hash method does that successfully.  And array CAN do that, but it would be far messier I believe.
